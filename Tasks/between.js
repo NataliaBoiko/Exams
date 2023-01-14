@@ -1,13 +1,13 @@
 // Extract substring between prefix and suffix
 
-getvaluebetween = (str, prefix, s) => {
+getvaluebetween = (str, prefix, suffix) => {
   indexOfString = str.indexOf(prefix);
   if (indexOfString  === -1) return '';
   else {
     k = indexOfString  + prefix.length;
     str = str.substring(k);
-    if (s) {
-      indexOfString  = str.indexOf(s);
+    if (suffix) {
+      indexOfString  = str.indexOf(suffix);
       if (indexOfString  === -1) {
         return '';
       } else {
