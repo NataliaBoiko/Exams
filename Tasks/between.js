@@ -1,17 +1,17 @@
 // Extract substring between prefix and suffix
 
 getvaluebetween = (str, p, s) => {
-  i = str.indexOf(p);
+  indexOfString = str.indexOf(p);
   if (i === -1) return '';
   else {
-    k = i + p.length;
+    k = indexOfString  + p.length;
     str = str.substring(k);
     if (s) {
       i = str.indexOf(s);
-      if (i === -1) {
+      if (indexOfString  === -1) {
         return '';
       } else {
-        str = str.substring(0, i);
+        str = str.substring(0, indexOfString);
       }
     }
   }
